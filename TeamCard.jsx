@@ -1,0 +1,1 @@
+import React from "react"; function TeamCard({member,onSelect}){return <article className="card"><div className="avatar">{member.name[0]}</div><div className="info"><h3>{member.name}</h3><p>{member.role}</p><small>{member.status}</small></div><button onClick={()=>onSelect(member)}>View</button></article>} export default React.memo(TeamCard);

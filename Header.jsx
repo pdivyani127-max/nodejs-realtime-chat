@@ -1,0 +1,1 @@
+import React from "react"; export default function Header({user,onLogout}){return <header><div><span className="eyebrow">REACT PROJECT</span><h1>Team Dashboard</h1></div><div className="user">Welcome, <strong>{user.name}</strong><button onClick={onLogout}>Reset</button></div></header>}
