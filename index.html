@@ -1,13 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="React styling techniques assignment portfolio" />
-    <title>React Styling Showcase</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REST API Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="tag">REST API ASSIGNMENT</p>
+      <h1>Live Weather Data</h1>
+      <p>GET real-time weather information from a public REST API and display the JSON response visually.</p>
+    </section>
+
+    <section class="card">
+      <label for="city">Choose a location</label>
+      <select id="city">
+        <option value="28.6139,77.2090,New Delhi">New Delhi</option>
+        <option value="19.0760,72.8777,Mumbai">Mumbai</option>
+        <option value="12.9716,77.5946,Bengaluru">Bengaluru</option>
+        <option value="22.5726,88.3639,Kolkata">Kolkata</option>
+      </select>
+      <button id="loadBtn">Fetch Weather</button>
+    </section>
+
+    <p id="status"></p>
+    <section id="weather" class="weather-grid"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
 </html>
