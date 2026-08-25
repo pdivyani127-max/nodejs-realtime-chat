@@ -1,26 +1,47 @@
-# React Components, Props & Data Flow
+# React Styling Techniques Showcase
 
-A functional React Team Dashboard demonstrating reusable components, props, state, and parent-child data flow.
+A responsive React portfolio created for a styling assignment.
 
-## Component structure
-- `App` owns members and selected-member state.
-- `Header` receives `user` and `onLogout` props.
-- `TeamList` receives members and passes each member to `TeamCard`.
-- `TeamCard` receives a member and callback prop.
-- `Profile` receives the selected member.
-- `AddMemberForm` receives a callback and sends new data to the parent.
+## Topics demonstrated
 
-## Concepts demonstrated
-- Functional components
-- Props and read-only data
-- Callback props
-- `useState`
-- One-way data flow
-- Dynamic `.map()` rendering
-- Stable `key` values
-- `React.memo`
-- Responsive CSS
+- UI/UX principles
+- React component styling
+- Inline styles
+- Styled Components
+- Emotion CSS-in-JS
+- CSS Flexbox
+- CSS Grid
+- Responsive media queries
+- Responsive/mobile-friendly design
+- Theme switching with React state
 
-## Run
-`npm install`
-`npm run dev`
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL shown by Vite.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Project structure
+
+```text
+react-styling-assignment/
+├── index.html
+├── package.json
+├── README.md
+└── src/
+    ├── main.jsx
+    └── styles.css
+```
+
+## Submission
+
+Upload this project to a GitHub repository and submit the repository link in the assignment's **Link** field.
