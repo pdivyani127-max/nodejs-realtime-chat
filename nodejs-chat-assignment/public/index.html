@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Node.js Real-Time Chat</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="chat-shell">
+    <h1>Real-Time Chat</h1>
+    <p class="subtitle">Node.js + Express + MongoDB + Socket.io</p>
+
+    <section id="login">
+      <input id="username" placeholder="Enter your username" maxlength="30" />
+      <button id="joinBtn">Join Chat</button>
+    </section>
+
+    <section id="chat" class="hidden">
+      <div id="messages" class="messages"></div>
+      <form id="messageForm">
+        <input id="messageInput" placeholder="Type a message..." maxlength="500" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
