@@ -1,0 +1,8 @@
+{
+  "name": "api-integration-assignment",
+  "version": "1.0.0",
+  "description": "Educational demonstration of API integration using Node.js",
+  "main": "src/app.js",
+  "scripts": { "start": "node src/app.js" },
+  "engines": { "node": ">=18" }
+}
