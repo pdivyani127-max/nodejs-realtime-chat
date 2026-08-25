@@ -1,33 +1,34 @@
-# React Todo List Assignment
+# MongoDB & NoSQL Library System Assignment
 
 ## Overview
-This project demonstrates fundamental React concepts by building an interactive Todo List.
+This assignment demonstrates MongoDB and NoSQL fundamentals by building a simple library database containing books, authors, and genres. It covers MongoDB setup, document data modeling, CRUD operations, search queries, indexing, and the importance of NoSQL systems.
 
-## Concepts Demonstrated
-- Functional React components
-- `useState` for component state
-- State changes with immutable update patterns
-- Props for passing data and callback functions
-- Adding todo items
-- Listing todo items
-- Deleting todo items
-- Marking tasks as completed
-- Controlled form input
-- Component separation and reusable UI
+## Topics Demonstrated
+- MongoDB installation and configuration
+- NoSQL and document-oriented data modeling
+- Databases and collections
+- Create, Read, Update, Delete (CRUD)
+- Filtering and searching
+- Aggregation
+- Indexing
+- Relationships using references
+- Advantages of NoSQL in modern applications
 
-## Component Structure
-- `App.jsx` — owns the main todo state and provides handlers.
-- `TodoForm.jsx` — manages the input field and sends new tasks through the `onAdd` prop.
-- `TodoList.jsx` — receives the todo array and callbacks through props.
-- `TodoItem.jsx` — displays an individual todo and uses callback props for toggle/delete actions.
-
-## How to Run
-```bash
-npm install
-npm run dev
+## Project Structure
+```text
+mongodb/
+  library.js
+report/
+  mongodb-report.md
+README.md
 ```
 
-Open the local Vite URL shown in the terminal.
+## How to Run
+1. Install MongoDB Community Server and make sure the MongoDB service is running.
+2. Open MongoDB Shell (`mongosh`).
+3. Run:
+   `load("mongodb/library.js")`
+4. The script creates the `library` database and its collections, inserts sample data, creates indexes, and demonstrates CRUD/search/aggregation queries.
 
-## Assignment Requirements
-The application allows users to add, list, delete, and complete todo items while demonstrating React state management and props handling.
+## Notes
+The sample data is intentionally small so that each operation can be easily understood and tested.
